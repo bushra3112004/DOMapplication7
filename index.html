@@ -33,14 +33,18 @@
 <body>
     <img src="./images/watch1.webp"  class="main-img" id="main-img">
     <div class="img-container">
-<img src="./images/watch1.webp" class="product-img" onclick=""/>
-<img src="./images/watch2.jpg" class="product-img" onclick="" />
-<img src="./images/watch3.png" class="product-img" onclick="" />
-<img src="./images/watch4.png" class="product-img" onclick="" />
-<img src="./images/watch5.jpg" class="product-img" onclick="" />
+<img src="./images/watch1.webp" class="product-img" onclick="changeimage('./images/watch1.webp')"/>
+<img src="./images/watch2.jpg" class="product-img" onclick="changeimage('./images/watch2.jpg')" />
+<img src="./images/watch3.png" class="product-img" onclick="changeimage('./images/watch3.png')" />
+<img src="./images/watch4.png" class="product-img" onclick="changeimage('./images/watch4.png')" />
+<img src="./images/watch5.jpg" class="product-img" onclick="changeimage('./images/watch5.jpg')" />
   </div>
   <script>
-    
+    function changeimage(imageName){
+        const mainimage=document.getElementById('main-img')
+        mainimage.src=imageName;
+    }
+
   </script>
 </body>
 </html>
